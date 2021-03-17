@@ -13,6 +13,8 @@ import {
 import Loader from "../reusable/Loader.js";
 import { ORDER_PAY_RESET } from "../../store/types/types";
 
+axios.defaults.baseURL = 'https://dms-back-end.herokuapp.com';
+
 const Order = ({ match, history }) => {
   const orderId = match.params.id;
 
